@@ -132,7 +132,7 @@ Some notes:
 - Codebase is built modularly so that every criterion or model that is added to its designated folder, provided its filename is equal to its classname, can be ran via string argument immediately. This way its easily extendable.
 - The same goes for training schemes; implemented here as classes and automatically loaded in by string reference. When you need new functionality concerning one aspect of training you can simply inherit from the `DefaultTrainer` and then override only that function you need differently. Alternatively, you can make your own training scheme, the sky is the limit!
 - All entry-points go through `main.py`, where the required models are loaded and thereafter redirected to the right training or testing scheme.
-- All results show up at the path `/gitignored/results/` in its own (dated) folder. In here you find a copy of the codebase at the time of execution, its calling command, tensorboard output, saved models and logs.
+- All results show up at the path `/gitignored/results/` in its own (date-stamped) folder. In here you find a copy of the codebase at the time of execution, its calling command, tensorboard output, saved models and logs.
 - In the file `utils/autoconfig.json` certain automatic configurations get set to make it easier to run different models in sequence. You can disable this with `--disable_autoconfig`, but it is *strongly recommended against*.
 
 
